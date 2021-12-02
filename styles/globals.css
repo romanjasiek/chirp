@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#333333];
+    }
+}
+
+@layer components {
+    .hoverAnimation {
+        @apply hover:bg-[#333333] hover:opacity-75 rounded-full cursor-pointer w-[75px] h-[75px]
+        xl:w-auto xl:h-auto xl:py-3 xl:px-4
+        transition duration-200 ease-out;
+    }
+
+    .icon {
+        @apply cursor-pointer w-9 h-9 hover:bg-[#888888] hover:bg-opacity-10 flex items-center justify-center rounded-full transition ease-out;
+    }
+
+    .tag {
+        @apply text-[#E9C46A] font-normal hover:underline cursor-pointer;
+      }
+}
